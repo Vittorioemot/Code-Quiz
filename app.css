@@ -1,0 +1,31 @@
+body {
+    background-color: lightblue;
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+  }
+  body {
+    padding: 20px;
+  }
+  button {
+    margin-top: 20px;
+    line-height: 60px;
+    font-weight: bold;
+    padding: 0 40px;
+    background: rgb(225, 233, 11);
+    border: none;
+  }
+  button:hover {
+    background: rgb(122, 255, 133);
+  }
+  
+  
+  }
+  
