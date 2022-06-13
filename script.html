@@ -9,20 +9,26 @@
 </head>
 <body>
 </header> <h1> Code Quiz</h1> 
-    <script src="./Assets/quiz.js"></script> 
    
      <!-- Container for Header -->
+     <div class="main-page">
+         <h1> Main Page </h1>
+     </div>
    
         <!-- div for scores link and time -->
-        
+                           
             <!-- View highscores -->
             <!--div class="col-6">
                 <!-- <a href="">View Highscores</a> -->
-                <button id="view-scores" type="button" class="btn btn-secondary d-inline-block mt-1">View High Scores</button>
+                <div class="main-start-button">
+                    <button id="start-button">START QUIZ</button>
+                   <!-- <button id="highscore-button">SHOW HIGHSCORE</button> -->
+                </div>
+               
             </div>
             <!-- Timer -->
             <div class="col-6">
-                <p class="d-flex justify-content-end time">Time:60s</p>
+                <p class="d-flex justify-content-end time">Time:<span id="time">60</span>s</p>
             </div>
         </div>
     </header>
@@ -46,7 +52,8 @@
                 <div class="row">
                     <div class="col-3"></div>
                     <div class="col-6">
-                        <h2 id="question">Jarvascript questions</h2>
+                        <h2 id="question">QUESTION</h2>
+                        <!--
                         <ul class="px-0 py-0 nobullets">
                             <li class="mb-3"><button id="question1" value="0" type="button"
                                     class="btn btn-success ansBtn">Question 1</button></li>
@@ -57,8 +64,16 @@
                             <li class="mb-3"><button id="question4" value="3" type="button"
                                     class="btn btn-success ansBtn">Question 4</button></li>
                         </ul>
+                        -->
+                        <div>
+                            <button id="question1" onclick="checkAnswer('1')">A</button>
+                            <button id="question2" onclick="checkAnswer('2')">B</button>
+                            <button id="question3" onclick="checkAnswer('3')">C</button>
+                            <button id="question4" onclick="checkAnswer('4')">D</button>
+                        </div>
                        
                             <hr>
+                            <h1 id="answer-response"></h1>
                             <!-- Correct or Wrong will be added via JS -->
                         </div>
                     </div>
@@ -70,7 +85,7 @@
                 <div class="row">
                     <div class="col-3"></div>
                     <div class="col-6">
-                        <h2>All done!</h2>
+                        <h2 id="all-done"></h2>
                         <p>Your final score is: <span id="score" class="pl-1">0</span></p>
                         <!-- <p class="score">Your final score is: </p> -->
                         <p>Enter initials: <span class="ml-1"><input placeholder="initials" id="initials" /></span>
@@ -90,8 +105,7 @@
                             <ol id="score-list">
                                 <!-- <li></li> -->
                             </ol>
-                            <button id="goback" class="btn btn-success d-inline-block mx-1 my-1">Go back</button>
-                            <button id="clearscores" class="btn btn-success mx-1 my-1 d-inline-block">Clear scores</button>
+                                                        <button id="clearscores" class="btn btn-success mx-1 my-1 d-inline-block">Clear scores</button>
                     </div>
                 </div>
             </section>
@@ -108,3 +122,5 @@
 </html>
 </body>
 </html>
+
+
